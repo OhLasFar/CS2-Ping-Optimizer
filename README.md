@@ -83,8 +83,6 @@ The provided settings adjust various network-related parameters in the game. For
 14. **cl_invites_only_friends 0**: Determines who can send you game invites.
 15. **cl_invites_only_mainmenu 0**: Determines when you can receive game invites.
 
-[Source](https://totalcsgo.com/commands)
-
 ### Effectiveness of the Tweaks:
 The tweaks are legitimate methods that some users employ to potentially reduce latency in various online games. However, their effectiveness can vary based on individual system configurations, network conditions, and the specific game in question.
 
