@@ -28,7 +28,7 @@ Always be cautious when making changes to the Windows Registry. It's recommended
 1. Open the Windows Registry Editor by pressing `Win + R`, typing `regedit`, and pressing Enter.
 2. Navigate to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters` .
 3. In the right pane (within the Parameters folder), right-click on an empty area, select New, and then choose DWORD (32-bit) Value.
-4. Name the new DWORD value as "MaxUserPort."
+4. Name the new DWORD value as "MaxUserPort" .
 5. Double-click on the "MaxUserPort" value to modify it, and set the value data to `65534` or a higher number as needed.
 6. Click "OK" to save the value.
 
@@ -37,7 +37,7 @@ Always be cautious when making changes to the Windows Registry. It's recommended
 1. Open the Windows Registry Editor by pressing `Win + R`, typing `regedit`, and pressing Enter.
 2. Navigate to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces`.
 3. In the right pane (within the Interfaces folder), right-click on an empty area, select New, and then choose DWORD (32-bit) Value.
-4. Name the new DWORD value as "TcpWindowSize."
+4. Name the new DWORD value as "TcpWindowSize" .
 5. Double-click on the "TcpWindowSize" value to modify it, and set the value data to `65535` or a higher number as needed.
 6. Click "OK" to save the value.
 
@@ -46,7 +46,7 @@ Always be cautious when making changes to the Windows Registry. It's recommended
 1. Open the Windows Registry Editor by pressing `Win + R`, typing `regedit`, and pressing Enter.
 2. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched`.
 3. In the right pane (within the Psched folder), right-click on an empty area, select New, and then choose DWORD (32-bit) Value.
-4. Name the new DWORD value as "NonBestEffortLimit."
+4. Name the new DWORD value as "NonBestEffortLimit" .
 5. Double-click on the "NonBestEffortLimit" value to modify it, and set the value data to `0`.
 6. Click "OK" to save the value.
 
@@ -55,7 +55,7 @@ Always be cautious when making changes to the Windows Registry. It's recommended
 1. Open the Windows Registry Editor by pressing `Win + R`, typing `regedit`, and pressing Enter.
 2. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile`.
 3. In the right pane (within the SystemProfile folder), right-click on an empty area, select New, and then choose DWORD (32-bit) Value.
-4. Name the new DWORD value as "NetworkThrottlingIndex."
+4. Name the new DWORD value as "NetworkThrottlingIndex" .
 5. Double-click on the "NetworkThrottlingIndex" value to modify it, and set the value data to `FFFFFFFF` (hexadecimal).
 6. Click "OK" to save the value.
 
