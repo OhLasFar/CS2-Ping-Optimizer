@@ -32,7 +32,7 @@ ui_setting_advertiseforhire_auto 1
 cl_join_advertise 2
 cl_invites_only_friends 0
 cl_invites_only_mainmenu 0
-...
+```
 
 ## CS2 Ping Optimizer
 
