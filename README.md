@@ -53,3 +53,23 @@ After applying the above tweaks, play CS2 and enjoy a potentially improved ping 
 ## Disclaimer
 
 Always be cautious when making changes to the Windows Registry. It's recommended to back up your registry before making any changes. The effectiveness of these tweaks may vary based on individual system configurations and network conditions.
+
+## Explanation of CS2-Ping-Optimizer Tweaks
+
+### 1. Windows Registry Tweaks:
+- **TcpAckFrequency**: This setting controls the frequency of acknowledgments sent for received TCP packets. By default, Windows might delay the acknowledgment briefly to see if it can be bundled with outgoing data. Setting this to `1` ensures that Windows acknowledges packets immediately.
+- **TCPNoDelay**: Essentially, this toggles the Nagle's algorithm. When enabled (set to `1`), it ensures that data packets are sent as soon as possible without grouping.
+
+Both of these tweaks aim to reduce latency by ensuring that packets are sent and acknowledged without any delay.
+
+### 2. In-game settings:
+The provided settings adjust various network-related parameters in the game. For instance:
+- `rate` controls the total number of bytes per second the game can download.
+- `cl_predictweapons` determines if the client should predict weapon effects.
+
+### Effectiveness of the Tweaks:
+The tweaks are legitimate methods that some users employ to potentially reduce latency in various online games. However, their effectiveness can vary based on individual system configurations, network conditions, and the specific game in question.
+
+While these tweaks do alter how your system and game manage network traffic, the actual improvement in ping or gameplay might differ among users. It's essential to approach such guides with caution. While they might benefit some users, the results might not be as pronounced for everyone. Additionally, always remember to back up the Windows Registry before making any changes due to the inherent risks associated with modifying it.
+
+In summary, the guide provides legitimate tweaks, but the actual benefits can vary. It's not necessarily "false advertisement," but results may differ based on individual circumstances.
