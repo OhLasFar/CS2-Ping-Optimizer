@@ -45,10 +45,10 @@ cl_invites_only_mainmenu 0
 ```
 5. After saving the file, right-click on `autoexec.cfg`, select **Properties**, check the **Read-only** option, and then click **OK**.
 6. To ensure the game uses the settings from the `autoexec.cfg` file when launched, you need to add it to the Steam launch options:
-- Open Steam and go to your game library.
-- Right-click on `Counter-Strike: Global Offensive` and select `Properties`.
-- In the `General` tab, scroll down and add `+exec autoexec.cfg` in the `Launch Options` section.
-- Click `OK` and close the properties window.
+   - Open Steam and go to your game library.
+   - Right-click on `Counter-Strike: Global Offensive` and select `Properties`.
+   - In the `General` tab, scroll down and add `+exec autoexec.cfg` in the `Launch Options` section.
+   - Click `OK` and close the properties window.
 7. You're all set! The game will now use the settings from the `autoexec.cfg` file when launched.
 
 ## CS2 Ping Optimizer
@@ -62,8 +62,8 @@ Always be cautious when making changes to the Windows Registry. It's recommended
 ## Explanation of CS2-Ping-Optimizer Tweaks
 
 ### 1. Windows Registry Tweaks:
-- **TcpAckFrequency**: This setting controls the frequency of acknowledgments sent for received TCP packets. By default, Windows might delay the acknowledgment briefly to see if it can be bundled with outgoing data. Setting this to `1` ensures that Windows acknowledges packets immediately.
-- **TCPNoDelay**: Essentially, this toggles the Nagle's algorithm. When enabled (set to `1`), it ensures that data packets are sent as soon as possible without grouping.
+   - **TcpAckFrequency**: This setting controls the frequency of acknowledgments sent for received TCP packets. By default, Windows might delay the acknowledgment briefly to see if it can be bundled with outgoing data. Setting this to `1` ensures that Windows acknowledges packets immediately.
+   - **TCPNoDelay**: Essentially, this toggles the Nagle's algorithm. When enabled (set to `1`), it ensures that data packets are sent as soon as possible without grouping.
 
 Both of these tweaks aim to reduce latency by ensuring that packets are sent and acknowledged without any delay.
 
