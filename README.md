@@ -63,7 +63,7 @@ Always be cautious when making changes to the Windows Registry. It's recommended
 Both of these tweaks aim to reduce latency by ensuring that packets are sent and acknowledged without any delay.
 
 ### 2. In-game settings:
-## CS:GO Network Settings Explained
+## CS2 Network Settings Explained
 
 The provided settings adjust various network-related parameters in the game. For instance:
 
