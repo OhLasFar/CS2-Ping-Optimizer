@@ -78,7 +78,7 @@ The provided settings adjust various network-related parameters in the game. For
 9. **cl_resend 0.5**: Determines the time before the client resends a packet to the server.
 10. **cl_timeout 30**: Sets the time before a client disconnects due to no server response.
 11. **lobby_default_privacy_bits2 0**: Sets default privacy settings for game lobbies.
-12. **ui_setting_advertiseforhire_auto 1**: Related to the "Looking to Play" feature in CS:GO.
+12. **ui_setting_advertiseforhire_auto 1**: Related to the "Looking to Play" feature in CS2.
 13. **cl_join_advertise 2**: Allows friends to join your game.
 14. **cl_invites_only_friends 0**: Determines who can send you game invites.
 15. **cl_invites_only_mainmenu 0**: Determines when you can receive game invites.
