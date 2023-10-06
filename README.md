@@ -24,28 +24,49 @@ Always be cautious when making changes to the Windows Registry. It's recommended
 ## Additional Windows Registry Network Settings
 
 ### MaxUserPort
-- **Path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
-- **File Name:** MaxUserPort
-- **Value:** `65534` (or higher)
-- **Description:** Increases the maximum number of ports available for network connections, potentially improving concurrent connections for gaming.
+
+1. Open the Windows Registry Editor by pressing Win + R, typing regedit, and pressing Enter.
+2. Navigate to HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters.
+3. Ensure you're in the correct folder path. It should be HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters.
+4. In the right pane (within the Parameters folder), right-click on an empty area, select New, and then choose DWORD (32-bit) Value.
+5. Name the new DWORD value as "MaxUserPort."
+6. Double-click on the "MaxUserPort" value to modify it, and set the value data to 65534 or a higher number as needed.
+7. Click "OK" to save the value.
 
 ### TcpWindowSize
-- **Path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces`
-- **File Name:** TcpWindowSize
-- **Value:** `65535` (or higher)
-- **Description:** Increases the TCP window size, which can improve data transfer efficiency and reduce packet loss.
+
+1. Open the Windows Registry Editor by pressing Win + R, typing regedit, and pressing Enter.
+2. Navigate to HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces.
+3. Ensure you're in the correct folder path. It should be HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces.
+4. In the right pane (within the Interfaces folder), right-click on an empty area, select New, and then choose DWORD (32-bit) Value.
+5. Name the new DWORD value as "TcpWindowSize."
+6. Double-click on the "TcpWindowSize" value to modify it, and set the value data to 65535 or a higher number as needed.
+7. Click "OK" to save the value.
 
 ### NonBestEffortLimit (Limit Reservable Bandwidth)
-- **Path:** `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched`
-- **File Name:** NonBestEffortLimit
-- **Value:** `0`
-- **Description:** Disables the limit on reserved bandwidth for Quality of Service (QoS), ensuring more bandwidth is available for gaming and other applications.
+
+1. Open the Windows Registry Editor by pressing Win + R, typing regedit, and pressing Enter.
+2. Navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched.
+3. Ensure you're in the correct folder path. It should be HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched.
+4. In the right pane (within the Psched folder), right-click on an empty area, select New, and then choose DWORD (32-bit) Value.
+5. Name the new DWORD value as "NonBestEffortLimit."
+6. Double-click on the "NonBestEffortLimit" value to modify it, and set the value data to 0.
+7. Click "OK" to save the value.
 
 ### NetworkThrottlingIndex
-- **Path:** `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile`
-- **File Name:** NetworkThrottlingIndex
-- **Value:** `FFFFFFFF` (hexadecimal)
-- **Description:** Disables network throttling, potentially reducing latency and improving network performance for gaming and multimedia applications.
+
+1. Open the Windows Registry Editor by pressing Win + R, typing regedit, and pressing Enter.
+2. Navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile.
+3. Ensure you're in the correct folder path. It should be HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile.
+4. In the right pane (within the SystemProfile folder), right-click on an empty area, select New, and then choose DWORD (32-bit) Value.
+5. Name the new DWORD value as "NetworkThrottlingIndex."
+6. Double-click on the "NetworkThrottlingIndex" value to modify it, and set the value data to FFFFFFFF (hexadecimal).
+7. Click "OK" to save the value.
+
+By following these steps, you can create the necessary DWORD values in the correct registry paths. Make sure you're in the correct folder path before creating each DWORD value.
+
+**Note:** After making these changes, it's essential to **reboot your PC** to ensure the settings take effect.
+
 
 ## CS2 Game Settings 🎮
 
@@ -90,6 +111,10 @@ cl_invites_only_mainmenu 0
 ### 1. Windows Registry Tweaks 🔧:
    - **TcpAckFrequency**: This setting controls the frequency of acknowledgments sent for received TCP packets. By default, Windows might delay the acknowledgment briefly to see if it can be bundled with outgoing data. Setting this to `1` ensures that Windows acknowledges packets immediately.
    - **TCPNoDelay**: Essentially, this toggles the Nagle's algorithm. When enabled (set to `1`), it ensures that data packets are sent as soon as possible without grouping.
+   - **MaxUserPort**: Increases the maximum number of ports available for network connections, potentially improving concurrent connections for gaming.
+   - **TcpWindowSize**: Increases the TCP window size, which can improve data transfer efficiency and reduce packet loss.
+   - **NonBestEffortLimit**: Disables the limit on reserved bandwidth for Quality of Service (QoS), ensuring more bandwidth is available for gaming and other applications.
+   - **NetworkThrottlingIndex**: Disables network throttling, potentially reducing latency and improving network performance for gaming and multimedia applications.
 
 Both of these tweaks aim to reduce latency by ensuring that packets are sent and acknowledged without any delay.
 
