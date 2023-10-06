@@ -6,10 +6,14 @@ A simple guide to optimize your ping in CS2 through Windows Registry tweaks and 
 
 1. Press `Win + R` and type `regedit`.
 2. Navigate to: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces`.
-3. Identify your **IPAddress** (or **DhcpIPAddress** if auto-assigned).
-4. Right-click > New > DWORD (32-bit) > Name: **TcpAckFrequency** > Modify: `1` (Hexadecimal).
-5. Right-click > New > DWORD (32-bit) > Name: **TCPNoDelay** > Modify: `1` (Hexadecimal).
-6. Restart your PC.
+3. To identify your local IP address:
+   - Press `Win + R`, type `cmd`, and press Enter.
+   - In the command prompt, type `ipconfig` and press Enter.
+   - Look for the "IPv4 Address" (or "IP Address" on some systems). It's usually the first one listed. This is your local IP.
+4. In the Registry Editor, identify your **IPAddress** (or **DhcpIPAddress** if auto-assigned) that matches the IP you found in the previous step.
+5. Right-click > New > DWORD (32-bit) > Name: **TcpAckFrequency** > Modify: `1` (Hexadecimal).
+6. Right-click > New > DWORD (32-bit) > Name: **TCPNoDelay** > Modify: `1` (Hexadecimal).
+7. Restart your PC.
 
 ## CS2 Game Settings
 
