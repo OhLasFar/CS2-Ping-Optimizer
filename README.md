@@ -21,6 +21,32 @@ Always be cautious when making changes to the Windows Registry. It's recommended
 6. Right-click > New > DWORD (32-bit) > Name: **TCPNoDelay** > Modify: `1` (Hexadecimal).
 7. Restart your PC.
 
+## Additional Windows Registry Network Settings
+
+### MaxUserPort
+- **Path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters`
+- **File Name:** MaxUserPort
+- **Value:** `65534` (or higher)
+- **Description:** Increases the maximum number of ports available for network connections, potentially improving concurrent connections for gaming.
+
+### TcpWindowSize
+- **Path:** `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces`
+- **File Name:** TcpWindowSize
+- **Value:** `65535` (or higher)
+- **Description:** Increases the TCP window size, which can improve data transfer efficiency and reduce packet loss.
+
+### NonBestEffortLimit (Limit Reservable Bandwidth)
+- **Path:** `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched`
+- **File Name:** NonBestEffortLimit
+- **Value:** `0`
+- **Description:** Disables the limit on reserved bandwidth for Quality of Service (QoS), ensuring more bandwidth is available for gaming and other applications.
+
+### NetworkThrottlingIndex
+- **Path:** `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile`
+- **File Name:** NetworkThrottlingIndex
+- **Value:** `FFFFFFFF` (hexadecimal)
+- **Description:** Disables network throttling, potentially reducing latency and improving network performance for gaming and multimedia applications.
+
 ## CS2 Game Settings 🎮
 
 Append the following settings to your `autoexec.cfg`:
