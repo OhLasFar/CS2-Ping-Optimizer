@@ -67,7 +67,7 @@ Both of these tweaks aim to reduce latency by ensuring that packets are sent and
 
 The provided settings adjust various network-related parameters in the game. For instance:
 
-1. **rate**: Controls the maximum amount of data (in bytes) that the server can send to the client per second. A higher value can improve connection quality, especially on faster internet connections.
+1. **rate 1000000**: Controls the maximum amount of data (in bytes) that the server can send to the client per second. A higher value can improve connection quality, especially on faster internet connections.
 2. **cl_predictweapons 1**: Enables weapon prediction on the client side, making gameplay feel smoother.
 3. **cl_lagcompensation 1**: Enables lag compensation, improving player actions' responsiveness in online games.
 4. **net_client_steamdatagram_enable_override 1**: Forces the use of Steam's Datagram Relay service for a more stable connection.
