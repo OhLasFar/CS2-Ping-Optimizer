@@ -2,6 +2,12 @@
 
 A simple guide to optimize your ping in CS2 through Windows Registry tweaks and in-game settings adjustments.
 
+## Disclaimer ⚠️
+
+Always be cautious when making changes to the Windows Registry. It's recommended to back up your registry before making any changes. The effectiveness of these tweaks may vary based on individual system configurations and network conditions.
+
+---
+
 ## Windows Registry Optimization 🖥️
 
 1. Press `Win + R` and type `regedit`.
@@ -51,24 +57,17 @@ cl_invites_only_mainmenu 0
    - Close the properties window.
 7. You're all set! You can now launch CS2, and the game will utilize the settings from the `autoexec.cfg` file.
 
-## CS2 Ping Optimizer 📉
-
-After applying the above tweaks, play CS2 and enjoy a potentially improved ping and reduced lag, especially when playing on distant servers.
-
-## Disclaimer ⚠️
-
-Always be cautious when making changes to the Windows Registry. It's recommended to back up your registry before making any changes. The effectiveness of these tweaks may vary based on individual system configurations and network conditions.
+---
 
 ## Explanation of CS2-Ping-Optimizer Tweaks 📚
 
-### 1. Windows Registry Tweaks:
+### 1. Windows Registry Tweaks 🔧:
    - **TcpAckFrequency**: This setting controls the frequency of acknowledgments sent for received TCP packets. By default, Windows might delay the acknowledgment briefly to see if it can be bundled with outgoing data. Setting this to `1` ensures that Windows acknowledges packets immediately.
    - **TCPNoDelay**: Essentially, this toggles the Nagle's algorithm. When enabled (set to `1`), it ensures that data packets are sent as soon as possible without grouping.
 
 Both of these tweaks aim to reduce latency by ensuring that packets are sent and acknowledged without any delay.
 
-### 2. In-game settings:
-## CS2 Network Settings Explained
+### 2. In-game settings 🔧:
 
 The provided settings adjust various network-related parameters in the game. For instance:
 
@@ -88,12 +87,16 @@ The provided settings adjust various network-related parameters in the game. For
 14. **cl_invites_only_friends 0**: Determines who can send you game invites.
 15. **cl_invites_only_mainmenu 0**: Determines when you can receive game invites.
 
-### Effectiveness of the Tweaks:
-The tweaks are legitimate methods that some users employ to potentially reduce latency in various online games. However, their effectiveness can vary based on individual system configurations, network conditions, and the specific game in question.
+---
 
-While these tweaks do alter how your system and game manage network traffic, the actual improvement in ping or gameplay might differ among users. It's essential to approach such guides with caution. While they might benefit some users, the results might not be as pronounced for everyone. Additionally, always remember to back up the Windows Registry before making any changes due to the inherent risks associated with modifying it.
+## CS2 Ping Optimizer & Effectiveness 📉
 
-In summary, the guide provides legitimate tweaks, but the actual benefits can vary. It's not necessarily "false advertisement," but results may differ based on individual circumstances.
+After applying the tweaks, you may experience improved ping and reduced lag in CS2, especially on distant servers. These methods are commonly used by players to reduce latency in online games. However, their impact can vary based on individual system configurations, network conditions, and the game itself.
+
+It's important to note that while these tweaks modify how your system and game handle network traffic, the actual benefits might not be consistent for everyone. Always back up the Windows Registry before making changes, given the risks associated with modifications.
+
+In essence, while the guide offers legitimate methods to optimize ping, the outcomes can differ based on various factors.
+
 
 ---
 
