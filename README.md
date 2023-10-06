@@ -44,7 +44,12 @@ cl_invites_only_friends 0
 cl_invites_only_mainmenu 0
 ```
 5. After saving the file, right-click on `autoexec.cfg`, select **Properties**, check the **Read-only** option, and then click **OK**.
-6. You're all set! The game will now use the settings from the `autoexec.cfg` file when launched.
+6. To ensure the game uses the settings from the `autoexec.cfg` file when launched, you need to add it to the Steam launch options:
+- Open Steam and go to your game library.
+- Right-click on `Counter-Strike: Global Offensive` and select `Properties`.
+- In the `General` tab, scroll down and add `+exec autoexec.cfg` in the `Launch Options` section.
+- Click `OK` and close the properties window.
+7. You're all set! The game will now use the settings from the `autoexec.cfg` file when launched.
 
 ## CS2 Ping Optimizer
 
