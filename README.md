@@ -15,7 +15,7 @@ Always be cautious when making changes to the Windows Registry. It's recommended
 3. To identify your local IP address:
    - Press `Win + R`, type `cmd`, and press Enter.
    - In the command prompt, type `ipconfig` and press Enter.
-   - Look for the "IPv4 Address" (or "IP Address" on some systems). It's usually the first one listed. This is your local IP (192.168.X.X OR 10.X.X.X).
+   - Look for the "IPv4 Address" (or "IP Address" on some systems). It's usually the first one listed. This is your local IP (`192.168.X.X` OR `10.X.X.X`).
 4. In the Registry Editor, identify your **IPAddress** (or **DhcpIPAddress** if auto-assigned) that matches the IP you found in the previous step.
 5. Right-click > New > DWORD (32-bit) > Name: **TcpAckFrequency** > Modify: `1` (Hexadecimal).
 6. Right-click > New > DWORD (32-bit) > Name: **TCPNoDelay** > Modify: `1` (Hexadecimal).
