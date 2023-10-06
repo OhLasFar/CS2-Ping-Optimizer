@@ -65,7 +65,6 @@ Both of these tweaks aim to reduce latency by ensuring that packets are sent and
 ### 2. In-game settings:
 The provided settings adjust various network-related parameters in the game. For instance:
 - `rate` controls the total number of bytes per second the game can download.
-- `cl_predictweapons` determines if the client should predict weapon effects.
 
 ### Effectiveness of the Tweaks:
 The tweaks are legitimate methods that some users employ to potentially reduce latency in various online games. However, their effectiveness can vary based on individual system configurations, network conditions, and the specific game in question.
