@@ -89,3 +89,17 @@ The tweaks are legitimate methods that some users employ to potentially reduce l
 While these tweaks do alter how your system and game manage network traffic, the actual improvement in ping or gameplay might differ among users. It's essential to approach such guides with caution. While they might benefit some users, the results might not be as pronounced for everyone. Additionally, always remember to back up the Windows Registry before making any changes due to the inherent risks associated with modifying it.
 
 In summary, the guide provides legitimate tweaks, but the actual benefits can vary. It's not necessarily "false advertisement," but results may differ based on individual circumstances.
+
+---
+
+### Connect with Me! 🌐
+
+If you found these tweaks helpful, consider giving a follow:
+
+- 🐦 **Twitter**: [@ohlasfar](https://twitter.com/ohlasfar)
+- 🎥 **Streaming**: I stream on [kick.com/LasFar](https://kick.com/LasFar) every Tuesday at 8:15 PM EST.
+
+Feel free to drop by during a stream or tweet at me to share your experience with the tweaks! Your feedback is appreciated. 😊
+
+---
+
