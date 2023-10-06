@@ -71,21 +71,21 @@ Both of these tweaks aim to reduce latency by ensuring that packets are sent and
 
 The provided settings adjust various network-related parameters in the game. For instance:
 
-1. **rate 1000000**: Controls the maximum amount of data (in bytes) that the server can send to the client per second. A higher value can improve connection quality, especially on faster internet connections.
-2. **cl_predictweapons 1**: Enables weapon prediction on the client side, making gameplay feel smoother.
-3. **cl_lagcompensation 1**: Enables lag compensation, improving player actions' responsiveness in online games.
-4. **net_client_steamdatagram_enable_override 1**: Forces the use of Steam's Datagram Relay service for a more stable connection.
-5. **net_maxroutable 1200**: Sets the maximum size of packets sent from the client to the server.
-6. **mm_session_search_qos_timeout 20**: Relates to matchmaking and sets a timeout for Quality of Service when searching for a game session.
-7. **mm_dedicated_search_maxping 50**: Sets the maximum ping for dedicated servers in matchmaking.
-8. **mm_csgo_community_search_players_min 3**: Sets the minimum number of players for community server searches.
-9. **cl_resend 0.5**: Determines the time before the client resends a packet to the server.
-10. **cl_timeout 30**: Sets the time before a client disconnects due to no server response.
-11. **lobby_default_privacy_bits2 0**: Sets default privacy settings for game lobbies.
-12. **ui_setting_advertiseforhire_auto 1**: Related to the "Looking to Play" feature in CS2.
-13. **cl_join_advertise 2**: Allows friends to join your game.
-14. **cl_invites_only_friends 0**: Determines who can send you game invites.
-15. **cl_invites_only_mainmenu 0**: Determines when you can receive game invites.
+   - **rate 1000000**: Controls the maximum amount of data (in bytes) that the server can send to the client per second. A higher value can improve connection quality, especially on faster internet connections.
+   - **cl_predictweapons 1**: Enables weapon prediction on the client side, making gameplay feel smoother.
+   - **cl_lagcompensation 1**: Enables lag compensation, improving player actions' responsiveness in online games.
+   - **net_client_steamdatagram_enable_override 1**: Forces the use of Steam's Datagram Relay service for a more stable connection.
+   - **net_maxroutable 1200**: Sets the maximum size of packets sent from the client to the server.
+   - **mm_session_search_qos_timeout 20**: Relates to matchmaking and sets a timeout for Quality of Service when searching for a game session.
+   - **mm_dedicated_search_maxping 50**: Sets the maximum ping for dedicated servers in matchmaking.
+   - **mm_csgo_community_search_players_min 3**: Sets the minimum number of players for community server searches.
+   - **cl_resend 0.5**: Determines the time before the client resends a packet to the server.
+   - **cl_timeout 30**: Sets the time before a client disconnects due to no server response.
+   - **lobby_default_privacy_bits2 0**: Sets default privacy settings for game lobbies.
+   - **ui_setting_advertiseforhire_auto 1**: Related to the "Looking to Play" feature in CS2.
+   - **cl_join_advertise 2**: Allows friends to join your game.
+   - **cl_invites_only_friends 0**: Determines who can send you game invites.
+   - **cl_invites_only_mainmenu 0**: Determines when you can receive game invites.
 
 ---
 
