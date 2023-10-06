@@ -19,6 +19,12 @@ A simple guide to optimize your ping in CS2 through Windows Registry tweaks and 
 
 Append the following settings to your `autoexec.cfg`:
 
+If you're unsure where to find the `autoexec.cfg` file, note that by default, this file might not exist and you'll need to create it manually. Here's how:
+
+1. Navigate to the following path: `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg`
+2. Check if `autoexec.cfg` is present. If not, create a new text file and name it `autoexec.cfg`.
+3. Open `autoexec.cfg` and paste the provided commands/settings.
+
 ```plaintext
 // NETWORK SETTINGS
 rate 1000000
@@ -37,6 +43,8 @@ cl_join_advertise 2
 cl_invites_only_friends 0
 cl_invites_only_mainmenu 0
 ```
+5. After saving the file, right-click on `autoexec.cfg`, select **Properties**, check the **Read-only** option, and then click **OK**.
+6. You're all set! The game will now use the settings from the `autoexec.cfg` file when launched.
 
 ## CS2 Ping Optimizer
 
