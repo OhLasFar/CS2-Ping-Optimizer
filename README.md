@@ -23,15 +23,6 @@ Always be cautious when making changes to the Windows Registry. It's recommended
 
 ## Additional Windows Registry Network Settings
 
-### MaxUserPort
-
-1. Open the Windows Registry Editor by pressing `Win + R`, typing `regedit`, and pressing Enter.
-2. Navigate to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters` .
-3. In the right pane (within the Parameters folder), right-click on an empty area, select New, and then choose DWORD (32-bit) Value.
-4. Name the new DWORD value as "MaxUserPort" .
-5. Double-click on the "MaxUserPort" value to modify it, and set the value data to `65534` or a higher number as needed.
-6. Click "OK" to save the value.
-
 ### TcpWindowSize
 
 1. Open the Windows Registry Editor by pressing `Win + R`, typing `regedit`, and pressing Enter.
@@ -107,7 +98,6 @@ cl_invites_only_mainmenu 0
 ### 1. Windows Registry Tweaks 🔧:
    - **TcpAckFrequency**: This setting controls the frequency of acknowledgments sent for received TCP packets. By default, Windows might delay the acknowledgment briefly to see if it can be bundled with outgoing data. Setting this to `1` ensures that Windows acknowledges packets immediately.
    - **TCPNoDelay**: Essentially, this toggles the Nagle's algorithm. When enabled (set to `1`), it ensures that data packets are sent as soon as possible without grouping.
-   - **MaxUserPort**: Increases the maximum number of ports available for network connections, potentially improving concurrent connections for gaming.
    - **TcpWindowSize**: Increases the TCP window size, which can improve data transfer efficiency and reduce packet loss.
    - **NonBestEffortLimit**: Disables the limit on reserved bandwidth for Quality of Service (QoS), ensuring more bandwidth is available for gaming and other applications.
    - **NetworkThrottlingIndex**: Disables network throttling, potentially reducing latency and improving network performance for gaming and multimedia applications.
