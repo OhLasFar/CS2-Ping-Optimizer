@@ -1,8 +1,8 @@
-# CS2 Ping Optimizer
+# CS2 Ping Optimizer 🚀
 
 A simple guide to optimize your ping in CS2 through Windows Registry tweaks and in-game settings adjustments.
 
-## Windows Registry Optimization
+## Windows Registry Optimization 🖥️
 
 1. Press `Win + R` and type `regedit`.
 2. Navigate to: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces`.
@@ -15,7 +15,7 @@ A simple guide to optimize your ping in CS2 through Windows Registry tweaks and 
 6. Right-click > New > DWORD (32-bit) > Name: **TCPNoDelay** > Modify: `1` (Hexadecimal).
 7. Restart your PC.
 
-## CS2 Game Settings
+## CS2 Game Settings 🎮
 
 Append the following settings to your `autoexec.cfg`:
 
@@ -51,15 +51,15 @@ cl_invites_only_mainmenu 0
    - Close the properties window.
 7. You're all set! You can now launch CS2, and the game will utilize the settings from the `autoexec.cfg` file.
 
-## CS2 Ping Optimizer
+## CS2 Ping Optimizer 📉
 
 After applying the above tweaks, play CS2 and enjoy a potentially improved ping and reduced lag, especially when playing on distant servers.
 
-## Disclaimer
+## Disclaimer ⚠️
 
 Always be cautious when making changes to the Windows Registry. It's recommended to back up your registry before making any changes. The effectiveness of these tweaks may vary based on individual system configurations and network conditions.
 
-## Explanation of CS2-Ping-Optimizer Tweaks
+## Explanation of CS2-Ping-Optimizer Tweaks 📚
 
 ### 1. Windows Registry Tweaks:
    - **TcpAckFrequency**: This setting controls the frequency of acknowledgments sent for received TCP packets. By default, Windows might delay the acknowledgment briefly to see if it can be bundled with outgoing data. Setting this to `1` ensures that Windows acknowledges packets immediately.
