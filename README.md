@@ -61,7 +61,7 @@ Append the following settings to your `autoexec.cfg`:
 
 If you're unsure where to find the `autoexec.cfg` file, note that by default, this file might not exist and you'll need to create it manually. Here's how:
 
-1. Navigate to the following path: `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg`
+1. Navigate to the following path: `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\cfg`
 2. Check if `autoexec.cfg` is present. If not, create a new text file and name it `autoexec.cfg`.
 3. Open `autoexec.cfg` and paste the provided commands/settings.
 
