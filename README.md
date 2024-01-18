@@ -10,27 +10,38 @@ Always be cautious when making changes to the Windows Registry. It's recommended
 
 ## Windows Registry Optimization 🖥️
 
-1. Press `Win + R` and type `regedit`.
-2. Navigate to: `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\Tcpip\Parameters\Interfaces`.
-3. To identify your local IP address:
+Optimize your network settings by modifying the Windows Registry. This guide includes steps for adjusting TCP settings to potentially improve network performance.
+
+1. **Access the Registry Editor**:
+   - Press `Win + R` and type `regedit`, then press Enter.
+
+2. **Navigate to the Network Interfaces**:
+   - Go to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces`.
+
+3. **Identify Your Local IP Address**:
    - Press `Win + R`, type `cmd`, and press Enter.
-   - In the command prompt, type `ipconfig` and press Enter.
-   - Look for the "IPv4 Address" (or "IP Address" on some systems). It's usually the first one listed. This is your local IP (`192.168.X.X` OR `10.X.X.X`).
-4. In the Registry Editor, identify your **IPAddress** (or **DhcpIPAddress** if auto-assigned) that matches the IP you found in the previous step.
-5. Right-click > New > DWORD (32-bit) > Name: **TcpAckFrequency** > Modify: `1` (Hexadecimal).
-6. Right-click > New > DWORD (32-bit) > Name: **TCPNoDelay** > Modify: `1` (Hexadecimal).
-7. Restart your PC.
+   - In the Command Prompt, type `ipconfig` and press Enter.
+   - Look for the "IPv4 Address" (or "IP Address" on some systems). It's usually the first one listed, like `192.168.X.X` or `10.X.X.X`.
 
-## Additional Windows Registry Network Settings
+4. **Locate Your Network Interface in the Registry Editor**:
+   - Find the **IPAddress** or **DhcpIPAddress** entry that matches your IP.
 
-### TcpWindowSize
+5. **Modify TCP Settings**:
+   - Right-click in an empty area, select New > DWORD (32-bit) Value.
+   - Create and modify the following values:
+     - **TcpAckFrequency**:
+       - Name: `TcpAckFrequency`
+       - Value: `1` (Hexadecimal)
+     - **TCPNoDelay**:
+       - Name: `TCPNoDelay`
+       - Value: `1` (Hexadecimal)
+     - **TcpWindowSize**:
+       - Name: `TcpWindowSize`
+       - Value: `65535` (Decimal)
 
-1. Open the Windows Registry Editor by pressing `Win + R`, typing `regedit`, and pressing Enter.
-2. Navigate to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces`.
-3. In the right pane (within the Interfaces folder), right-click on an empty area, select New, and then choose DWORD (32-bit) Value.
-4. Name the new DWORD value as "TcpWindowSize" .
-5. Double-click on the "TcpWindowSize" value to modify it, and set the value data to `65535` or a higher number as needed.
-6. Click "OK" to save the value.
+6. **Apply Changes**:
+   - After adding and modifying these values, restart your PC to apply the changes.
+
 
 ### NonBestEffortLimit (Limit Reservable Bandwidth)
 
