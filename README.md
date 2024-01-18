@@ -153,7 +153,7 @@ In essence, while the guide offers legitimate methods to optimize ping, the outc
 If you found these tweaks helpful, consider giving a follow:
 
 - 🐦 **Twitter**: [@ohlasfar](https://twitter.com/ohlasfar)
-- 🎥 **Streaming**: I stream on [kick.com/LasFar](https://kick.com/LasFar) every Tuesday at 8:15 PM EST.
+- 🎥 **Streaming**: I stream on [Twitch.tv/LasFar](https://twitch.tv/LasFar) every Tuesday at 8:15 PM EST and during the day aswel (sometimes).
 
 Feel free to drop by during a stream or tweet at me to share your experience with the tweaks! Your feedback is appreciated. 😊
 
