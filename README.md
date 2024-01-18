@@ -10,61 +10,35 @@ Always be cautious when making changes to the Windows Registry. It's recommended
 
 ## Windows Registry Optimization 🖥️
 
-Optimize your network settings by modifying the Windows Registry. This guide includes steps for adjusting TCP settings to potentially improve network performance.
+Optimize your network settings by modifying the Windows Registry. This guide includes steps for adjusting various settings to potentially improve network performance.
 
 1. **Access the Registry Editor**:
    - Press `Win + R` and type `regedit`, then press Enter.
 
-2. **Navigate to the Network Interfaces**:
-   - Go to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces`.
+2. **Modify TCP Settings in Network Interfaces**:
+   - Navigate to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces`.
+   - Identify your local IP address:
+     - Press `Win + R`, type `cmd`, and press Enter.
+     - In the Command Prompt, type `ipconfig` and press Enter.
+     - Look for the "IPv4 Address" (or "IP Address" on some systems), usually `192.168.X.X` or `10.X.X.X`.
+   - Locate the **IPAddress** or **DhcpIPAddress** in the Registry that matches your IP.
+   - Right-click > New > DWORD (32-bit) Value for each of the following:
+     - **TcpAckFrequency**: Set value to `1` (Hexadecimal)
+     - **TCPNoDelay**: Set value to `1` (Hexadecimal)
+     - **TcpWindowSize**: Set value to `65535` (Decimal)
 
-3. **Identify Your Local IP Address**:
-   - Press `Win + R`, type `cmd`, and press Enter.
-   - In the Command Prompt, type `ipconfig` and press Enter.
-   - Look for the "IPv4 Address" (or "IP Address" on some systems). It's usually the first one listed, like `192.168.X.X` or `10.X.X.X`.
+3. **Set NonBestEffortLimit**:
+   - Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched`.
+   - Right-click > New > DWORD (32-bit) Value > Name it "NonBestEffortLimit".
+   - Modify the value to `0` (Hexadecimal).
 
-4. **Locate Your Network Interface in the Registry Editor**:
-   - Find the **IPAddress** or **DhcpIPAddress** entry that matches your IP.
+4. **Adjust NetworkThrottlingIndex**:
+   - Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile`.
+   - Right-click > New > DWORD (32-bit) Value > Name it "NetworkThrottlingIndex".
+   - Modify the value to `FFFFFFFF` (Hexadecimal).
 
-5. **Modify TCP Settings**:
-   - Right-click in an empty area, select New > DWORD (32-bit) Value.
-   - Create and modify the following values:
-     - **TcpAckFrequency**:
-       - Name: `TcpAckFrequency`
-       - Value: `1` (Hexadecimal)
-     - **TCPNoDelay**:
-       - Name: `TCPNoDelay`
-       - Value: `1` (Hexadecimal)
-     - **TcpWindowSize**:
-       - Name: `TcpWindowSize`
-       - Value: `65535` (Decimal)
-
-6. **Apply Changes**:
-   - After adding and modifying these values, restart your PC to apply the changes.
-
-
-### NonBestEffortLimit (Limit Reservable Bandwidth)
-
-1. Open the Windows Registry Editor by pressing `Win + R`, typing `regedit`, and pressing Enter.
-2. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Psched`.
-3. In the right pane (within the Psched folder), right-click on an empty area, select New, and then choose DWORD (32-bit) Value.
-4. Name the new DWORD value as "NonBestEffortLimit" .
-5. Double-click on the "NonBestEffortLimit" value to modify it, and set the value data to `0`.
-6. Click "OK" to save the value.
-
-### NetworkThrottlingIndex
-
-1. Open the Windows Registry Editor by pressing `Win + R`, typing `regedit`, and pressing Enter.
-2. Navigate to `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile`.
-3. In the right pane (within the SystemProfile folder), right-click on an empty area, select New, and then choose DWORD (32-bit) Value.
-4. Name the new DWORD value as "NetworkThrottlingIndex" .
-5. Double-click on the "NetworkThrottlingIndex" value to modify it, and set the value data to `FFFFFFFF` (hexadecimal).
-6. Click "OK" to save the value.
-
-By following these steps, you can create the necessary DWORD values in the correct registry paths. Make sure you're in the correct folder path before creating each DWORD value.
-
-**Note:** After making these changes, it's essential to **reboot your PC** to ensure the settings take effect.
-
+5. **Apply Changes**:
+   - After adding and modifying these values, **restart your PC to apply the changes**.
 
 ## CS2 Game Settings 🎮
 
