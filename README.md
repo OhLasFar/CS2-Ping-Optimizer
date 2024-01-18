@@ -52,21 +52,21 @@ If you're unsure where to find the `autoexec.cfg` file, note that by default, th
 
 ```plaintext
 // NETWORK SETTINGS
-rate 1000000
-cl_predictweapons 1
-cl_lagcompensation 1
-net_client_steamdatagram_enable_override 1
-net_maxroutable 1200
-mm_session_search_qos_timeout 20
-mm_dedicated_search_maxping 50
-mm_csgo_community_search_players_min 3
-cl_resend 0.5
-cl_timeout 30
-lobby_default_privacy_bits2 0
-ui_setting_advertiseforhire_auto 1
-cl_join_advertise 2
-cl_invites_only_friends 0
-cl_invites_only_mainmenu 0
+rate 1000000							//Sets data receive rate limit.
+cl_predictweapons 1						//Enables weapon prediction.
+cl_lagcompensation 1 						//Allows lag compensation.
+net_client_steamdatagram_enable_override 1			//Toggles Steam Datagram Relay.
+net_maxroutable 1200						//Sets maximum packet size.
+mm_session_search_qos_timeout 20				//Affects matchmaking QoS timeout.
+mm_dedicated_search_maxping 25				        //Limits matchmaking server ping. (You might want to adapt this setting depending on your location)
+mm_csgo_community_search_players_min 3			        //Sets minimum players for community search.
+cl_resend 0.5							//Controls packet resend rate.
+cl_timeout 30							//Sets server response timeout.
+lobby_default_privacy_bits2 0					//Manages lobby privacy settings.
+ui_setting_advertiseforhire_auto 1				//Auto-settings for in-game hire advertisement.
+cl_join_advertise 2						//Controls game join advertising.
+cl_invites_only_friends 0					//Restricts invites to friends.
+cl_invites_only_mainmenu 0					//Manages invites in main menu.
 ```
 5. After saving the file, right-click on `autoexec.cfg`, select **Properties**, check the **Read-only** option, and then click **OK**.
 6. To ensure the game uses the settings from the `autoexec.cfg` file when launched, follow these steps to add it to the Steam launch options:
