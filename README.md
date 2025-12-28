@@ -106,9 +106,7 @@ Latency improvements depend on ISP routing, distance to Valve's servers, Wi-Fi v
 ### Connect with Me! 🌐
 
 - 🐦 **Twitter**: [@ohlasfar](https://twitter.com/ohlasfar)
-- 🎥 **Streaming**: Weekly streams on [Twitch.tv/LasFar](https://twitch.tv/LasFar) every Tuesday at 8:15 PM EST plus surprise daytime sessions.
-
-Drop by, share your benchmark screenshots, and let me know which tweaks helped you the most!
+- 🌐 **Dispattern**: [dispattern.com](https://dispattern.com) — Your #1 skin database for everything pattern-related and analysis in Counter-Strike 2.
 
 ---
 
